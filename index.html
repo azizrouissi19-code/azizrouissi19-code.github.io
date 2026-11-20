@@ -114,6 +114,7 @@ section{padding:72px 0;border-top:1px solid var(--line)}
 .proj li{margin-bottom:5px}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
 .tag{font-family:"JetBrains Mono";font-size:12px;padding:4px 9px;border-radius:7px;background:var(--bg);border:1px solid var(--line);color:var(--muted)}
+.wip{display:inline-block;font-size:11px;font-weight:600;color:var(--accent2);background:var(--teal-soft);padding:2px 8px;border-radius:999px;margin-right:6px}
 .metric{display:inline-block;font-family:"Space Grotesk";font-weight:700;color:var(--accent);background:var(--accent-soft);padding:2px 8px;border-radius:6px;font-size:14px}
 
 /* skills */
@@ -183,7 +184,7 @@ footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-s
       <div class="stats">
         <div class="stat"><b>4×</b><span>1st place hackathons</span></div>
         <div class="stat"><b>0.817</b><span>mAP@0.5 on the edge</span></div>
-        <div class="stat"><b>6</b><span>AI &amp; robotics projects</span></div>
+        <div class="stat"><b>7</b><span>AI &amp; robotics projects</span></div>
         <div class="stat"><b>IEEE</b><span>RAS chapter chair</span></div>
       </div>
     </div>
@@ -255,6 +256,19 @@ footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-s
           <li>Runs locally (Edge AI) on a Raspberry Pi with ROS 2 and an ESP32.</li>
         </ul>
         <div class="tags"><span class="tag">Python</span><span class="tag">LLM</span><span class="tag">JSON Schema</span><span class="tag">ROS 2</span><span class="tag">ESP32</span><span class="tag">Raspberry Pi</span><span class="tag">Edge AI</span></div>
+      </article>
+
+      <article class="proj reveal" data-c="vision robotics iot">
+        <div class="top"><div class="cat">Computer Vision · Industrial Automation</div><div class="date"><span class="wip">In progress</span> Nov 2026 –</div></div>
+        <h3>HarnessVision</h3>
+        <div class="ctx">Smart inspection &amp; monitoring cell for wire harnesses</div>
+        <p>A bench prototype that reproduces an automotive quality station: a camera checks the <b>colour and variant</b> of harness wires and connectors, and the result drives a PLC.</p>
+        <ul>
+          <li>YOLOv8 detection + HSV colour check on a Raspberry Pi.</li>
+          <li>OK/NOK decision sent to a simulated Siemens S7 PLC (TIA Portal, S7-PLCSIM) via Snap7 / Modbus TCP.</li>
+          <li>Equipment telemetry from ESP32/STM32 with Isolation Forest anomaly alerts and a KPI dashboard.</li>
+        </ul>
+        <div class="tags"><span class="tag">YOLOv8</span><span class="tag">OpenCV</span><span class="tag">Raspberry Pi</span><span class="tag">TIA Portal</span><span class="tag">Snap7</span><span class="tag">ESP32</span><span class="tag">Isolation Forest</span><span class="tag">Dashboard</span></div>
       </article>
 
       <article class="proj reveal" data-c="agentic">
